@@ -1,0 +1,11 @@
+tasks:
+template: seanhalpin.io
+    tabs for navbar :
+        about
+        contact
+        resume
+        projects / timeline / what ive been doing
+    navbar should:
+        stuck on top
+        or - disappear when scrolling down but appear when scrolling up
+    
