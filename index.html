@@ -13,6 +13,7 @@
 </head>
 
 <style>
+@import url('http://getbootstrap.com/dist/css/bootstrap.css');
 html {
   height: 100%;
 }
@@ -25,6 +26,16 @@ h1 {
   font-size: 60px;
   color: #69F;
 }
+
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
 
 .navbar, .navbar-nav .open .dropdown-menu>li>a, .navbar-default .navbar-nav .open .dropdown-menu {
     margin-bottom: 0;
@@ -81,7 +92,8 @@ h1 {
     background-repeat: no-repeat;
     color: #ffffff;
     height: 100%;
-    padding-top: 450px;
+    max-width: 100%;
+    padding-top: 150px;
 }
 
 .subtitle {
@@ -137,10 +149,8 @@ h1 {
 </nav>
 
 <!-- About Me Section -->
-<div class="jumbotron text-center">
-  <!--<div class="col-xs-4 col-lg-3">-->
-  <!--  <img src="../images/profile1.jpg" class="img-responsive"></img></div>-->
-  <!--<div class="col-xs-6 col-lg-6">-->
+<div class="jumbotron vertical-center text-center">
+  <div class="container">
     <h1>I'm Richard Zhang</h1>
     <p>future software engineer</p>
   </div>
