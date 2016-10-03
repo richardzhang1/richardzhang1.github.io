@@ -16,6 +16,11 @@ body {
   position: relative;
 }
 
+h1 {
+  font-size: 60px;
+  color: #69F;
+}
+
 .navbar, .navbar-nav .open .dropdown-menu>li>a, .navbar-default .navbar-nav .open .dropdown-menu {
     margin-bottom: 0;
     background-color: #286B9B;
@@ -64,19 +69,27 @@ body {
     color: #fff !important;
 }
 
-
 .jumbotron {
     background-color: #0AACE2;
     color: #ffffff;
     padding: 225px 25px;
 }
 
+.subtitle {
+    font-size: 20px !important;
+}
+
+.image-scale img {
+    height: 100px;
+    padding: 0px;
+    width: auto;
+}
 .bg-grey {
     background-color: #f6f6f6;
 }
 
 .container-fluid {
-    padding: 60px 50px;
+    padding: 50px 50px;
 }
 </style>
 
@@ -89,7 +102,7 @@ body {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><img src="/sun.png"></img></a>
+      <a class="navbar-brand" href="#"><img src="../images/sun.png"></img></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -100,11 +113,9 @@ body {
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Links<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="https://github.com/richardzhang1">LinkedIn Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/richardzhang2">LinkedIn Profile</a></li>
             <li><a href="https://github.com/richardzhang1">GitHub Profile</a></li>
-            <li><a href="https://github.com/richardzhang1">Resume</a></li>
-            
-            
+            <li><a href="https://drive.google.com/file/d/0B3DJ2OZXR_pGOERlYjZfZ3FnOGM/view?usp=sharing">Resume</a></li>
           </ul>
         </li>
       </ul>
@@ -116,16 +127,29 @@ body {
   </div>
 </nav>
 
-<div class="jumbotron">
-  <h1>Jumbotron</h1> 
-  <p>Hello there, I am a programmer.</p> 
+<!-- About Me Section -->
+<div class="jumbotron text-center">
+  <h1>I'm Richard Zhang</h1> 
+  <p>future software engineer</p> 
 </div>
 
-<div class="container-fluid">
-  <h2>Description about me</h2>
-  <h4>Lorem ipsum..</h4> 
-  <p>Lorem ipsum..</p>
-  <button class="btn btn-default btn-lg">Get in Touch</button>
+<div class="container text-center">
+  <h1>I am ...</h1>
+  <br><br>
+  <div class="row">
+    <div class="col-md-4 col-lg-4">
+      <img src="../images/bing-logo.gif" class="img-responsive"></img>
+      <h2>I am a junior majoring in computer science at Binghamton University.</h2>
+    </div>
+    <div class="col-md-4 col-lg-4">
+      <img src="../images/teamwork.png" class="img-responsive"></img>
+      <h2>I am the secretary and treasurer of my university's table tennis club.</h2>
+    </div>
+    <div class="col-md-4 col-lg-4">
+      <img src="../images/fintech.jpg" class="img-responsive"></img>
+      <h2>I am interested in pursuing a career in finance and technology.</h2>
+    </div>
+  </div>
 </div>
 
 <div class="container-fluid bg-grey">
