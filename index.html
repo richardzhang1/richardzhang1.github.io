@@ -4,7 +4,7 @@
   <title>Richard Zhang</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="../images/logo.jpg">
+  <link rel="icon" href="../images/logo.png">
   <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
@@ -13,18 +13,17 @@
 </head>
 
 <style>
-@import url('http://getbootstrap.com/dist/css/bootstrap.css');
 html {
   height: 100%;
 }
 body {
+  color: #FFF;
   position: relative;
   height: 100%;
 }
 
 h1 {
   font-size: 60px;
-  color: #69F;
 }
 
 
@@ -94,6 +93,7 @@ h1 {
     height: 100%;
     max-width: 100%;
     padding-top: 150px;
+    margin-bottom:0px;
 }
 
 .subtitle {
@@ -105,11 +105,28 @@ h1 {
     padding: 0px;
     width: auto;
 }
-.bg-grey {
-    background-color: #f6f6f6;
+
+.my-background {
+    background-color: #1D2731;
 }
 
-.container-fluid {
+.my-interests {
+    background-color: #328CC1;
+}
+
+.my-skills {
+    background-color: #D9B310;
+}
+
+.my-work {
+    background-color: #0B3C5D;
+}
+
+.bg-grey {
+    background-color: #FF9;
+}
+
+.container-sections {
     padding: 50px 50px;
 }
 </style>
@@ -123,14 +140,14 @@ h1 {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><img src="../images/logo-button.jpg"></img></a>
+      <a class="navbar-brand" href="#"><img src="../images/logo.png"></img></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">About</a></li>
         <li><a href="#">Interests</a></li>
         <li><a href="#">Skills</a></li>
-        <li><a href="#">Projects</a></li>
+        <li><a href="#">Work</a></li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Links<span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -148,7 +165,7 @@ h1 {
   </div>
 </nav>
 
-<!-- About Me Section -->
+<!-- JUMBOTRON -->
 <div class="jumbotron vertical-center text-center">
   <div class="container">
     <h1>I'm Richard Zhang</h1>
@@ -156,50 +173,90 @@ h1 {
   </div>
 </div>
 
-<div class="container text-center">
-  <h1>I am ...</h1>
-  <br><br>
-  <div class="row">
-    <div class="col-md-4 col-lg-4">
-      <img src="../images/bing-logo.gif" class="img-responsive"></img>
-      <h2>I am a junior majoring in computer science at Binghamton University.</h2>
-    </div>
-    <div class="col-md-4 col-lg-4">
-      <img src="../images/teamwork.png" class="img-responsive"></img>
-      <h2>I am the secretary and treasurer of my university's table tennis club.</h2>
-    </div>
-    <div class="col-md-4 col-lg-4">
-      <img src="../images/fintech.jpg" class="img-responsive"></img>
-      <h2>I am interested in pursuing a career in finance and technology.</h2>
+<!-- About Me Section -->
+<div class="container-fluid my-background">
+  <div class="container text-center container-sections">
+    <h1>I am...</h1>
+    <br><br>
+    <div class="row">
+      <div class="col-md-4 col-lg-4">
+        <img src="../images/bing-logo.gif" class="img-responsive"></img>
+        <h2>Junior majoring in computer science at Binghamton University</h2>
+      </div>
+      <div class="col-md-4 col-lg-4">
+        <img src="../images/teamwork.png" class="img-responsive"></img>
+        <h2>Secretary and treasurer of my university's table tennis club</h2>
+      </div>
+      <div class="col-md-4 col-lg-4">
+        <img src="../images/fintech.png" class="img-responsive"></img>
+        <h2>Interested in pursuing a career in finance and technology</h2>
+      </div>
     </div>
   </div>
 </div>
 
-<div class="container-fluid bg-grey">
-  <h2>Hobbies</h2>
-  <h4><strong>MISSION:</strong> Our mission lorem ipsum..</h4> 
-  <p><strong>VISION:</strong> Our vision Lorem ipsum..
+<!-- Interests / Hobbies Section -->
+<div class="container-fluid my-interests">
+  <div class="container text-center container-sections">
+    <h1>I enjoy...</h1>
+    <br><br>
+    <div class="row">
+      <div class="col-md-4 col-lg-4">
+        <img src="../images/ping-pong.png" class="img-responsive"></img>
+        <h2>Table Tennis</h2>
+      </div>
+      <div class="col-md-4 col-lg-4">
+        <img src="../images/pokeball.png" class="img-responsive"></img>
+        <h2>Video Games</h2>
+      </div>
+      <div class="col-md-4 col-lg-4">
+        <img src="../images/noodles.png" class="img-responsive"></img>
+        <h2>Exotic food</h2>
+      </div>
+    </div>
+    <br><br>
+    <div class="row">
+      <div class="col-md-4 col-lg-4">
+        <img src="../images/coding.png" class="img-responsive"></img>
+        <h2>Coding competitions</h2>
+      </div>
+      <div class="col-md-4 col-lg-4">
+        <img src="../images/puzzle.png" class="img-responsive"></img>
+        <h2>Puzzles</h2>
+      </div>
+      <div class="col-md-4 col-lg-4">
+        <img src="../images/investment.png" class="img-responsive"></img>
+        <h2>Investing</h2>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="container-fluid">
-  <h2>Description about me</h2>
-  <h4>Lorem ipsum..</h4> 
-  <p>Lorem ipsum..</p>
-  <button class="btn btn-default btn-lg">Get in Touch</button>
+<div class="container-fluid my-skills">
+  <div class="container text-center container-sections">
+    <h2>Description about me</h2>
+    <h4>Lorem ipsum..</h4> 
+    <p>Lorem ipsum..</p>
+    <button class="btn btn-default btn-lg">Get in Touch</button>
+  </div>
 </div>
 
-<div class="container-fluid bg-grey">
-  <h2>Hobbies</h2>
-  <h4><strong>MISSION:</strong> Our mission lorem ipsum..</h4> 
-  <p><strong>VISION:</strong> Our vision Lorem ipsum..
+<div class="container-fluid my-work">
+  <div class="container text-center container-sections">
+    <h2>Description about me</h2>
+    <h4>Lorem ipsum..</h4> 
+    <p>Lorem ipsum..</p>
+    <button class="btn btn-default btn-lg">Get in Touch</button>
+  </div>
 </div>
 
-<div style="padding-left:16px">
-  <h2>Projects</h2>
-  <p>The quick brown fox jumped over the lazy dog!</p>
+<div class="container-fluid my-background">
+  <div class="container text-center container-sections">
+    <h1>Any questions?</h1>
+    <h4>Lorem ipsum..</h4> 
+    <p>Lorem ipsum..</p>
+  </div>
 </div>
-
-
 
 </body>
 </html>
