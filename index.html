@@ -13,21 +13,14 @@
 </head>
 
 <style>
-html {
-  height: 100%;
-}
+html {height: 100%;}
 body {
   color: #FFF;
   position: relative;
   height: 100%;
 }
 
-h1 {
-  font-size: 60px;
-}
-
-
-
+h1 {font-size: 60px;}
 h4 {
   font-size: 55px;
   text-align: left;
@@ -41,7 +34,6 @@ h4 {
   align-items: center;
 }
 
-
 .navbar, .navbar-nav .open .dropdown-menu>li>a, .navbar-default .navbar-nav .open .dropdown-menu {
     margin-bottom: 0;
     background-color: #286B9B;
@@ -54,7 +46,6 @@ h4 {
     box-shadow: 0 8px 6px -6px #555;
     opacity: 0.95;
 }
-
 .navbar li a, .navbar .navbar-brand {
     color: #FFF !important;
 }
@@ -69,22 +60,18 @@ h4 {
   padding: 0px;
   width: auto;
 }
-
 .navbar-brand {
   padding: 5px;
   height: 70px;
 }
-
 .nav >li >a {
     padding-top: 30px;
     padding-bottom: 20px;
 }
-
 .navbar-nav li a:hover, .navbar-nav li.active a {
     color: #FFF !important;
     background-color: #0b485b !important;
 }
-
 .navbar-default .navbar-toggle {
     border-color: transparent;
     color: #fff !important;
@@ -100,6 +87,40 @@ h4 {
     max-width: 100%;
     padding-top: 150px;
     margin-bottom:0px;
+}
+
+.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    /* The duration of the animation */
+    animation-duration: 0.5s; 
+    -webkit-animation-duration: 0.5;
+    /* Make the element visible */
+    visibility: visible; 
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
 }
 
 .subtitle {
@@ -212,15 +233,15 @@ a {
     <br><br>
     <div class="row">
       <div class="col-md-4 col-lg-4">
-        <img src="../images/bing-logo.gif" class="img-responsive"></img>
+        <img src="../images/bing-logo.gif" class="slideanim img-responsive"></img>
         <h2>Junior majoring in computer science at Binghamton University</h2>
       </div>
       <div class="col-md-4 col-lg-4">
-        <img src="../images/teamwork.png" class="img-responsive"></img>
+        <img src="../images/teamwork.png" class="slideanim img-responsive"></img>
         <h2>Secretary and treasurer of my university's table tennis club</h2>
       </div>
       <div class="col-md-4 col-lg-4">
-        <img src="../images/fintech.png" class="img-responsive"></img>
+        <img src="../images/fintech.png" class="slideanim img-responsive"></img>
         <h2>Interested in pursuing a career in finance and technology</h2>
       </div>
     </div>
@@ -234,30 +255,30 @@ a {
     <br><br>
     <div class="row">
       <div class="col-md-4 col-lg-4">
-        <img src="../images/ping-pong.png" class="img-responsive"></img>
+        <img src="../images/ping-pong.png" class="slideanim img-responsive"></img>
         <h2>Table Tennis</h2>
       </div>
       <div class="col-md-4 col-lg-4">
-        <img src="../images/pokeball.png" class="img-responsive"></img>
+        <img src="../images/pokeball.png" class="slideanim img-responsive"></img>
         <h2>Video Games</h2>
       </div>
       <div class="col-md-4 col-lg-4">
-        <img src="../images/noodles.png" class="img-responsive"></img>
+        <img src="../images/noodles.png" class="slideanim img-responsive"></img>
         <h2>Exotic food</h2>
       </div>
     </div>
     <br><br>
     <div class="row">
       <div class="col-md-4 col-lg-4">
-        <img src="../images/coding.png" class="img-responsive"></img>
+        <img src="../images/coding.png" class="slideanim img-responsive"></img>
         <h2>Coding competitions</h2>
       </div>
       <div class="col-md-4 col-lg-4">
-        <img src="../images/puzzle.png" class="img-responsive"></img>
+        <img src="../images/puzzle.png" class="slideanim img-responsive"></img>
         <h2>Puzzles</h2>
       </div>
       <div class="col-md-4 col-lg-4">
-        <img src="../images/investment.png" class="img-responsive"></img>
+        <img src="../images/investment.png" class="slideanim img-responsive"></img>
         <h2>Investing</h2>
       </div>
     </div>
@@ -275,16 +296,16 @@ a {
         <h4>Python</h4>
       </div>
       <div class="col-xs-3 col-md-1 col-lg-1">
-        <img src="../images/star.png" class="img-responsive"></img>
+        <img src="../images/star.png" class="slideanim img-responsive"></img>
       </div>
       <div class="col-xs-3 col-md-1 col-lg-1">
-        <img src="../images/star.png" class="img-responsive"></img>
+        <img src="../images/star.png" class="slideanim img-responsive"></img>
       </div>
       <div class="col-xs-3 col-md-1 col-lg-1">
-        <img src="../images/star.png" class="img-responsive"></img>
+        <img src="../images/star.png" class="slideanim img-responsive"></img>
       </div>
       <div class="col-xs-3 col-md-1 col-lg-1">
-        <img src="../images/star.png" class="img-responsive"></img>
+        <img src="../images/star.png" class="slideanim img-responsive"></img>
       </div>
     </div>
     <br>
@@ -294,13 +315,13 @@ a {
         <h4>Java</h4>
       </div>
       <div class="col-xs-3 col-md-1 col-lg-1">
-        <img src="../images/star.png" class="img-responsive"></img>
+        <img src="../images/star.png" class="slideanim img-responsive"></img>
       </div>
       <div class="col-xs-3 col-md-1 col-lg-1">
-        <img src="../images/star.png" class="img-responsive"></img>
+        <img src="../images/star.png" class="slideanim img-responsive"></img>
       </div>
       <div class="col-xs-3 col-md-1 col-lg-1">
-        <img src="../images/star.png" class="img-responsive"></img>
+        <img src="../images/star.png" class="slideanim img-responsive"></img>
       </div>
     </div>
     <br>
@@ -310,13 +331,13 @@ a {
         <h4>C / C++</h4>
       </div>
       <div class="col-xs-3 col-md-1 col-lg-1">
-        <img src="../images/star.png" class="img-responsive"></img>
+        <img src="../images/star.png" class="slideanim img-responsive"></img>
       </div>
       <div class="col-xs-3 col-md-1 col-lg-1">
-        <img src="../images/star.png" class="img-responsive"></img>
+        <img src="../images/star.png" class="slideanim img-responsive"></img>
       </div>
       <div class="col-xs-3 col-md-1 col-lg-1">
-        <img src="../images/star.png" class="img-responsive"></img>
+        <img src="../images/star.png" class="slideanim img-responsive"></img>
       </div>
     </div>
     <br>
@@ -326,10 +347,10 @@ a {
         <h4>HTML / CSS</h4>
       </div>
       <div class="col-xs-3 col-md-1 col-lg-1">
-        <img src="../images/star.png" class="img-responsive"></img>
+        <img src="../images/star.png" class="slideanim img-responsive"></img>
       </div>
       <div class="col-xs-3 col-md-1 col-lg-1">
-        <img src="../images/star.png" class="img-responsive"></img>
+        <img src="../images/star.png" class="slideanim img-responsive"></img>
       </div>
     </div>
     <br><hr><br>
@@ -339,19 +360,19 @@ a {
         <h4>Problem Solving</h4>
       </div>
       <div class="col-xs-2 col-md-1 col-lg-1">
-        <img src="../images/star.png" class="img-responsive"></img>
+        <img src="../images/star.png" class="slideanim img-responsive"></img>
       </div>
       <div class="col-xs-2 col-md-1 col-lg-1">
-        <img src="../images/star.png" class="img-responsive"></img>
+        <img src="../images/star.png" class="slideanim img-responsive"></img>
       </div>
       <div class="col-xs-2 col-md-1 col-lg-1">
-        <img src="../images/star.png" class="img-responsive"></img>
+        <img src="../images/star.png" class="slideanim img-responsive"></img>
       </div>
       <div class="col-xs-2 col-md-1 col-lg-1">
-        <img src="../images/star.png" class="img-responsive"></img>
+        <img src="../images/star.png" class="slideanim img-responsive"></img>
       </div>
       <div class="col-xs-2 col-md-1 col-lg-1">
-        <img src="../images/star.png" class="img-responsive"></img>
+        <img src="../images/star.png" class="slideanim img-responsive"></img>
       </div>
     </div>
     <br>
@@ -361,13 +382,13 @@ a {
         <h4>Agile</h4>
       </div>
       <div class="col-xs-3 col-md-1 col-lg-1">
-        <img src="../images/star.png" class="img-responsive"></img>
+        <img src="../images/star.png" class="slideanim img-responsive"></img>
       </div>
       <div class="col-xs-3 col-md-1 col-lg-1">
-        <img src="../images/star.png" class="img-responsive"></img>
+        <img src="../images/star.png" class="slideanim img-responsive"></img>
       </div>
       <div class="col-xs-3 col-md-1 col-lg-1">
-        <img src="../images/star.png" class="img-responsive"></img>
+        <img src="../images/star.png" class="slideanim img-responsive"></img>
       </div>
     </div>
   </div>
@@ -388,7 +409,7 @@ a {
         </h3>
       </div>
       <div class="col-md-4 col-lg-3">
-        <a href="http://yondster.com/" target="_blank"><img src="../images/yondster.png" class="img-responsive"></img></a>
+        <a href="http://yondster.com/" target="_blank"><img src="../images/yondster.png" class="slideanim img-responsive"></img></a>
       </div>
     </div>
     <hr><br>
@@ -397,7 +418,7 @@ a {
     <div class="row">
       <div class="col-md-2 col-lg-5">
         <a href="http://binghamtontabletennis.herokuapp.com/" target="_blank">
-          <img src="../images/table-tennis-website.png" class="img-responsive"></img>
+          <img src="../images/table-tennis-website.png" class="slideanim img-responsive"></img>
         </a>
         <h2>Table tennis club website</h2>
         <a href="https://github.com/BinghamtonTableTennis/rating-system" target="_blank" class="btn btn-default btn-lg">
@@ -407,7 +428,7 @@ a {
       <div class="col-md-2 col-lg-2"></div>
       <div class="col-md-2 col-lg-5">
         <a href="https://play.google.com/store/apps/details?id=com.jeffreychan.yunnori&hl=en" target="_blank">
-          <img src="../images/yut.png" class="img-responsive"></img>
+          <img src="../images/yut.png" class="slideanim img-responsive"></img>
         </a>
         <h2>Yutnori Android Game</h2>
         <a href="https://github.com/superjeffreyc/Yut" target="_blank" class="btn btn-default btn-lg">
@@ -418,7 +439,7 @@ a {
     <div class="row">
       <div class="col-md-2 col-lg-5">
         <a href="https://github.com/richardzhang1/Connect-Four" target="_blank">
-          <img src="../images/connectfour.png" class="img-responsive"></img>
+          <img src="../images/connectfour.png" class="slideanim img-responsive"></img>
         </a>
         <h2>Connect Four Application</h2>
         <a href="https://github.com/richardzhang1/Connect-Four" target="_blank" class="btn btn-default btn-lg">
@@ -428,7 +449,7 @@ a {
       <div class="col-md-2 col-lg-2"></div>
       <div class="col-md-2 col-lg-5">
         <a href="https://play.google.com/store/apps/details?id=com.jeffreychan.enterthematrix" target="_blank">
-          <img src="../images/matrix.png" class="img-responsive"></img>
+          <img src="../images/matrix.png" class="slideanim img-responsive"></img>
         </a>
         <h2>Linear Algebra Android App</h2>
         <a href="https://github.com/richardzhang1/Enter-The-Matrix" target="_blank" class="btn btn-default btn-lg">
@@ -456,17 +477,17 @@ a {
       </div>
       <div class="col-xs-4 col-md-2 col-lg-2">
         <a href="https://www.linkedin.com/in/richardzhang2" target="_blank">
-          <img src="../images/linkedin.png" class="img-responsive"></src>
+          <img src="../images/linkedin.png" class="slideanim img-responsive"></src>
         </a>
       </div>
       <div class="col-xs-4 col-md-2 col-lg-2">
         <a href="https://github.com/richardzhang1" target="_blank">
-          <img src="../images/github.png" class="img-responsive"></src>
+          <img src="../images/github.png" class="slideanim img-responsive"></src>
         </a>
       </div>
       <div class="col-xs-4 col-md-2 col-lg-2">
         <a href="https://drive.google.com/file/d/0B3DJ2OZXR_pGOERlYjZfZ3FnOGM/view?usp=sharing" target="_blank">
-          <img src="../images/resume.png" class="img-responsive"></src>
+          <img src="../images/resume.png" class="slideanim img-responsive"></src>
         </a>
       </div>
     </div>
@@ -477,29 +498,39 @@ a {
 $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
 
-   // Make sure this.hash has a value before overriding default behavior
-  if (this.hash !== "") {
+      // Store hash
+      var hash = this.hash;
 
-    // Prevent default anchor click behavior
-    event.preventDefault();
-
-    // Store hash
-    var hash = this.hash;
-
-    // Using jQuery's animate() method to add smooth page scroll
-    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-    $('html, body').animate({
-      scrollTop: $(hash).offset().top
-    }, 900, function(){
-
-      // Add hash (#) to URL when done scrolling (default click behavior)
-      window.location.hash = hash;
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
       });
     } // End if
   });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + $(window).height() * 3 / 4) {
+          $(this).addClass("slide");
+        }
+    });
+  });
 })
 </script>
+
 
 </body>
 </html>
