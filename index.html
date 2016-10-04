@@ -26,6 +26,8 @@ h1 {
   font-size: 60px;
 }
 
+
+
 h4 {
   font-size: 55px;
   text-align: left;
@@ -126,8 +128,21 @@ h4 {
     background-color: #0B3C5D;
 }
 
-.bg-grey {
-    background-color: #FF9;
+.btn {
+    background-color: #5CACDD;
+    border-color: #5CACDD;
+    color: #FFF;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.btn:hover, .btn:focus, .btn:active, .btn.active, .open > .dropdown-toggle.btn {
+    background-color: #33A6CC;
+    border-color: #33A6CC;
+    color: #FFF;
+    box-shadow: none;
 }
 
 .container-sections {
@@ -305,7 +320,7 @@ h4 {
         <img src="../images/star.png" class="img-responsive"></img>
       </div>
     </div>
-    <br><hr>
+    <br><hr><br>
     <div class="row">
       <div class="col-md-3 col-lg-1"></div>
       <div class="col-md-3 col-lg-5">
@@ -346,12 +361,69 @@ h4 {
   </div>
 </div>
 
+<!-- Work / Projects -->
 <div class="container-fluid my-work">
   <div class="container text-center container-sections">
-    <h2>Description about me</h2>
-    <h4>Lorem ipsum..</h4> 
-    <p>Lorem ipsum..</p>
-    <button class="btn btn-default btn-lg">Get in Touch</button>
+    <h1>I did...</h1>
+    <br><br>
+    
+    <!-- Work Experience first -->
+    <div class="row">
+      <div class="col-md-8 col-lg-9">
+        <h2>Yondster PBC</h2><h2>Summer 2017 Software Web Tester Internship</h2>
+        <h3>I prepared software test procedures and test cases to access the website platform. I also documented and tracked
+            bugs and issues using JIRA and Confluence.
+        </h3>
+      </div>
+      <div class="col-md-4 col-lg-3">
+        <a href="http://yondster.com/" target="_blank"><img src="../images/yondster.png" class="img-responsive"></img></a>
+      </div>
+    </div>
+    <hr><br>
+    
+    <!-- Projects -->
+    <div class="row">
+      <div class="col-md-2 col-lg-5">
+        <a href="http://binghamtontabletennis.herokuapp.com/" target="_blank">
+          <img src="../images/table-tennis-website.png" class="img-responsive"></img>
+        </a>
+        <h2>Table tennis club website</h2>
+        <a href="https://github.com/BinghamtonTableTennis/rating-system" target="_blank" class="btn btn-default btn-lg">
+          View on GitHub
+        </a>
+      </div>
+      <div class="col-md-2 col-lg-2"></div>
+      <div class="col-md-2 col-lg-5">
+        <a href="https://play.google.com/store/apps/details?id=com.jeffreychan.yunnori&hl=en" target="_blank">
+          <img src="../images/yut.png" class="img-responsive"></img>
+        </a>
+        <h2>Yutnori Android Game</h2>
+        <a href="https://github.com/superjeffreyc/Yut" target="_blank" class="btn btn-default btn-lg">
+          View on GitHub
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2 col-lg-5">
+        <a href="https://github.com/richardzhang1/Connect-Four" target="_blank">
+          <img src="../images/connectfour.png" class="img-responsive"></img>
+        </a>
+        <h2>Connect Four Application</h2>
+        <a href="https://github.com/richardzhang1/Connect-Four" target="_blank" class="btn btn-default btn-lg">
+          View on GitHub
+        </a>
+      </div>
+      <div class="col-md-2 col-lg-2"></div>
+      <div class="col-md-2 col-lg-5">
+        <a href="https://play.google.com/store/apps/details?id=com.jeffreychan.enterthematrix" target="_blank">
+          <img src="../images/matrix.png" class="img-responsive"></img>
+        </a>
+        <h2>Linear Algebra Android App</h2>
+        <a href="https://github.com/richardzhang1/Enter-The-Matrix" target="_blank" class="btn btn-default btn-lg">
+          View on GitHub
+        </a>
+      </div>
+    </div>
   </div>
 </div>
 
