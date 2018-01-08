@@ -64,13 +64,13 @@ h4 {
 
 .jumbotron {
     background-color: #5CACDD;
-    background-image: url(../images/triangle.png);
-    background-size: cover;
+    background-image: url(../images/ground.png);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
     color: #ffffff;
-    height: 100%;
-    max-width: 100%;
-    padding-top: 150px;
+    width: 100%;
+    padding-top: 0px;
     margin-bottom:0px;
 }
 
