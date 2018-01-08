@@ -1,0 +1,165 @@
+html {height: 100%;}
+body {
+  color: #FFF;
+  position: relative;
+  height: 100%;
+}
+
+h1 {font-size: 60px;}
+h4 {
+  font-size: 55px;
+  text-align: left;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+.navbar, .navbar-nav .open .dropdown-menu>li>a, .navbar-default .navbar-nav .open .dropdown-menu {
+    margin-bottom: 0;
+    background-color: #286B9B;
+    z-index: 9999;
+    border: 0;
+    font-size: 24px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 2px;
+    border-radius: 0;
+    box-shadow: 0 8px 6px -6px #555;
+    opacity: 0.95;
+}
+.navbar li a, .navbar .navbar-brand {
+    color: #FFF !important;
+}
+/* the dropdown button on mobile */
+.navbar-toggle {
+    margin-top: 10px;
+    padding: 17px;
+    background-color: #222;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 0px;
+  width: auto;
+}
+.navbar-brand {
+  padding: 5px;
+  height: 70px;
+}
+.nav >li >a {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #FFF !important;
+    background-color: #0b485b !important;
+}
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+.jumbotron {
+    background-color: #5CACDD;
+    background-image: url(../images/triangle.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    height: 100%;
+    max-width: 100%;
+    padding-top: 150px;
+    margin-bottom:0px;
+}
+
+.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    /* The duration of the animation */
+    animation-duration: 0.5s; 
+    -webkit-animation-duration: 0.5;
+    /* Make the element visible */
+    visibility: visible; 
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+.subtitle {
+    font-size: 20px !important;
+}
+
+.image-scale img {
+    height: 100px;
+    padding: 0px;
+    width: auto;
+}
+
+.my-background {
+    background-color: #1D2731;
+}
+
+.my-interests {
+    background-color: #328CC1;
+}
+
+.my-skills {
+    background-color: #D9B310;
+}
+
+.my-work {
+    background-color: #0B3C5D;
+}
+
+.footer {
+    background-color: #FA6D68;
+    padding: 50px;
+}
+
+.btn {
+    background-color: #5CACDD;
+    border-color: #5CACDD;
+    color: #FFF;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.btn:hover, .btn:focus, .btn:active, .btn.active, .open > .dropdown-toggle.btn {
+    background-color: #33A6CC;
+    border-color: #33A6CC;
+    color: #FFF;
+    box-shadow: none;
+}
+
+a {
+  color: #FFF;
+}
+
+.container-sections {
+    padding: 50px 50px;
+}
