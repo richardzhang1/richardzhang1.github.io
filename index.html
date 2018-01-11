@@ -10,56 +10,47 @@
   <link rel="icon" href="assets/images/head.png">
   <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/base.css" />
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat">
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/js/script.js"></script>
+  <script>
+    $(function(){
+      $("#header").load("header.html"); 
+    });
+  </script>
 </head>
 
-<!-- Scrollspy -->
-<body id="myPage" data-spy="scroll" data-target=".navbar" offset="80" data-offset="80">
-  
-<!-- Navbar -->
-<nav class="navbar navbar-fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="/"><img src="assets/images/figurine.png"></img></a>
-    <ul class="nav navbar-right">
-      <li><a href="/">About</a></li>
-      <li><a href="#work">Work</a></li>
-    </ul>
-  </div>
-</nav>
+<body>
+  <div id="header"></div>
 
-<!--JUMBOTRON -->
-<div class="jumbotron vertical-center text-center">
-  <div class="container">
-    <h1>I'm Richard Zhang</h1>
-    <p>future software engineer</p>
-  </div>
-</div>
-
-<!-- About Me Section -->
-<div id="about"></div>
-<div class="container-fluid my-background">
-  <div class="container text-center container-sections">
-    <h1>I am...</h1>
-    <br><br>
-    <div class="row">
-      <div class="col-md-4 col-lg-4">
-        <img src="assets/images/bing-logo.gif" class="slideanim img-responsive"></img>
-        <h2>Junior majoring in computer science at Binghamton University</h2>
-      </div>
-      <div class="col-md-4 col-lg-4">
-        <img src="assets/images/teamwork.png" class="slideanim img-responsive"></img>
-        <h2>Secretary and treasurer of my university's table tennis club</h2>
-      </div>
-      <div class="col-md-4 col-lg-4">
-        <img src="assets/images/fintech.png" class="slideanim img-responsive"></img>
-        <h2>Interested in pursuing a career in finance and technology</h2>
-      </div>
+  <!--JUMBOTRON -->
+  <div class="jumbotron vertical-center text-center">
+    <div class="container">
+      <h1>I'm Richard Zhang</h1>
+      <p>future software engineer</p>
     </div>
   </div>
-</div>
+
+<!-- About Me Section -->
+<!--<div class="container-fluid my-background">-->
+<!--  <div class="container text-center container-sections">-->
+<!--    <h1>I am...</h1>-->
+<!--    <br><br>-->
+<!--    <div class="row">-->
+<!--      <div class="col-md-4 col-lg-4">-->
+<!--        <img src="assets/images/bing-logo.gif" class="slideanim img-responsive"></img>-->
+<!--        <h2>Junior majoring in computer science at Binghamton University</h2>-->
+<!--      </div>-->
+<!--      <div class="col-md-4 col-lg-4">-->
+<!--        <img src="assets/images/teamwork.png" class="slideanim img-responsive"></img>-->
+<!--        <h2>Secretary and treasurer of my university's table tennis club</h2>-->
+<!--      </div>-->
+<!--      <div class="col-md-4 col-lg-4">-->
+<!--        <img src="assets/images/fintech.png" class="slideanim img-responsive"></img>-->
+<!--        <h2>Interested in pursuing a career in finance and technology</h2>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
 
 <!-- Interests / Hobbies Section -->
 <div id="hobbies" class="container-fluid my-interests">

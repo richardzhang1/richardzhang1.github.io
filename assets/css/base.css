@@ -1,12 +1,19 @@
-/*html {height: 100%;}*/
+html {
+    height: 100%;
+    
+}
 body {
-  color: #FFF;
-  position: relative;
-  height: 100%;
+    color: #FFF;
+}
+
+.container {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1 {
-    font-size: 60px;
+  font-size: 60px;
 }
 
 h4 {
@@ -22,62 +29,47 @@ h4 {
   align-items: center;
 }
 
-.navbar {
-    margin-bottom: 0;
-    /*background-color: #286B9B;*/
-    /*background-color: #5CACDD;*/
-    /*background-color: transparent;*/
-    background: #5CACDD !important;
-    z-index: 9999;
-    border: 0;
-    font-size: 18px !important;
-    /*line-height: 1.42857143 !important;*/
-    letter-spacing: 1px;
-    /*border-radius: 0;*/
-    /*opacity: 0.95;*/
-}
-.navbar li a, .navbar .navbar-brand {
-    color: #FFF;
+.nav {
+    transition: top 0.2s ease-in-out;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index:99;
 }
 
-/* the dropdown button on mobile */
-.navbar-toggle {
-    margin-top: 10px;
-    padding: 17px;
-    background-color: #222;
+.nav-unhidden {
+    top: 0px;
 }
 
-.navbar-brand>img {
-  height: 100%;
-  padding: 0px;
-  width: auto;
-}
-.navbar-brand {
-  padding: 5px;
-  height: 70px;
+.nav-hidden {
+    top: -80px;
 }
 
-.nav >li {
-    display:inline-block;
+.nav-list {
+    float: right;
+    padding-top: 1em;
+    position: relative;
+    font-size: 150%;
 }
 
-.nav >li >a {
-    padding-top: 30px;
-    padding-bottom: 20px;
+.nav-list >li {
+    display: block;
+    float: left;
+    margin: 0 0 0 1em;
 }
 
-.navbar-nav li a:hover, .navbar-nav li.active a {
-    background-color: inherit;
+.nav-brand >img {
+    height: 70px;
+    padding: 10px 0px 10px 0;
 }
 
-.navbar-default .navbar-toggle {
-    border-color: transparent;
-    color: #fff !important;
+a:focus, a:hover {
+    text-decoration: none;
 }
 
 .jumbotron {
     background-color: #5CACDD;
-    background-image: url(../images/ground.png);
+    background-image: url(../images/skyline.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -167,12 +159,4 @@ h4 {
     border-color: #33A6CC;
     color: #FFF;
     box-shadow: none;
-}
-
-a {
-  color: #FFF;
-}
-
-.container-sections {
-    padding: 50px 50px;
 }
